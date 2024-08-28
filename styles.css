@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: 'Haxrcorp', sans-serif;
+    position: relative;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.date-time {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    background-color: #20232a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 750px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 300px; 
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.links a:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}
+
+.search-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 750px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    background-color: #20232a;
+    color: #61dafb;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .right-image {
+        display: none;
+    }
+
+    .links a {
+        font-size: 1.2em;
+        margin: 5px 10px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-input {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .right-image {
+        display: none; 
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .links a {
+        font-size: 1em;
+        margin: 5px;
+    }
+}
+
